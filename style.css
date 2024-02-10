@@ -82,7 +82,18 @@ display: block;
     border-radius: 30px;
     padding: 10px;
     margin: 10px;
+    cursor: pointer;
 }
+
+.categories p:hover{
+    transition: 1s;
+    background-color:transparent;
+    color: black;
+    
+}
+    
+
+
 .sale-image{
     position: relative;
 }
@@ -94,6 +105,24 @@ display: block;
     top: 10%;
     left: 10%;
     color:brown;
+    background-color: white;
+    animation-name: zoom;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+@keyframes zoom {
+    0%{
+        transform: scale: 0;
+        opacity:0
+
+    
+    }
+    100%{
+        transform: scale: 1;
+        opacity: 1;
+        
+    }
 }
 
 .sale-image img {
