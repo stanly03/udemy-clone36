@@ -50,6 +50,9 @@ body {
     display: flex;
     gap: 10px;
 }
+.navbar__s4{
+    display: none;
+ }
 /* /* my learning popup* */
 .mylearning{
     position:relative;
@@ -148,12 +151,16 @@ display: block;
 }
 
 .cr-card {
-    width: 300px;
+    flex-grow: 1;
+    flex-basis: 20%;
+    margin: 5px;
+
 }
 
 .cr-card img {
     height: 50%;
     width: 100%;
+   
 }
 
 .topic {
@@ -225,3 +232,26 @@ display: block;
 .popular p{
     margin-top: 10px;
 }
+
+
+/* media quries */
+@media screen and (max-width:800px){
+ body{
+    font-size: 10px;
+ }
+ 
+}
+@media screen and (max-width:600px){
+   .cr-card {
+       flex-basis: 40%;
+    }
+    .categories{
+        display: none;
+    }
+    .navbar__s2,.navbar__s3{
+        display: none;
+        
+    }
+    .navbar__s4{
+        display: block;
+    }
